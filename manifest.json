@@ -1,0 +1,26 @@
+{
+    "name": "Fivethirtyeight forecasts",
+    "version": "0.1",
+    "description": "Chrome extension that displays the 2018 House and Senate forecasts in your browser",
+    "manifest_version": 2,
+    "permissions": ["https://projects.fivethirtyeight.com/","activeTab", "storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+    "browser_action": {
+        "default_title": "Fivethirtyeight forecast",
+        "default_popup": "popup.html",
+        "default_icon": "images/fivethirtyeight-logo.png"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "icons": {
+        "16": "images/fivethirtyeight-logo.png",
+        "32": "images/fivethirtyeight-logo.png",
+        "48": "images/fivethirtyeight-logo.png",
+        "128": "images/fivethirtyeight-logo.png"
+    }
+}
