@@ -20,7 +20,7 @@ const getForecast = function (cb) {
           party2: stats[1].candidate,
           winprob1: parseFloat((stats[0].models[model].winprob)).toFixed(1),
           winprob2: parseFloat((stats[1].models[model].winprob)).toFixed(1),
-          badgeprob: ""+Math.round(stats[0].models[model].winprob)
+          badgeprob: Math.round(stats[0].models[model].winprob)+"%"
         }
         console.log(rv);
         return cb(rv);

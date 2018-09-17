@@ -4,7 +4,7 @@
 
 // initialization
 chrome.runtime.onInstalled.addListener(function() {
-  chrome.browserAction.setBadgeBackgroundColor({ color: [0, 0, 255, 255] });
+  chrome.browserAction.setBadgeBackgroundColor({ color: [0, 96, 180, 255] });
   chrome.browserAction.setBadgeText({text: ''});
   chrome.storage.local.get("model", function(result) {
     if (result === undefined || result.model === undefined) {

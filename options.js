@@ -9,7 +9,7 @@ chrome.storage.local.get("model", function(result) {
       let button = document.createElement('button');
       button.textContent = item;
       if (curModel === item) {
-        button.style.backgroundColor = "#006cf9";
+        button.style.border="5px solid #f99500";
       }
       button.addEventListener('click', function() {
         button.style.backgroundColor = "#f99500";
