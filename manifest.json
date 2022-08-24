@@ -1,7 +1,7 @@
 {
   "name": "Fivethirtyeight forecasts",
-  "version": "0.2.1",
-  "description": "Chrome extension that displays the 2018 House and Senate forecasts in your browser",
+  "version": "0.22.1",
+  "description": "Chrome extension that displays the 2022 midterms Senate forecasts in your browser",
   "manifest_version": 2,
   "permissions": ["storage", "alarms"],
   "background": {
@@ -9,7 +9,7 @@
     "persistent": false
   },
   "browser_action": {
-    "default_title": "Fivethirtyeight forecast",
+    "default_title": "Fivethirtyeight 2022 midterms forecast",
     "default_popup": "popup.html",
     "default_icon": "images/fivethirtyeight-logo.png"
   },
@@ -18,9 +18,6 @@
     "open_in_tab": false
   },
   "icons": {
-    "16": "images/fivethirtyeight-logo.png",
-    "32": "images/fivethirtyeight-logo.png",
-    "48": "images/fivethirtyeight-logo.png",
     "128": "images/fivethirtyeight-logo.png"
   }
 }

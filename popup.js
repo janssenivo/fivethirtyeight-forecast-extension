@@ -9,7 +9,7 @@ window.addEventListener('click',function(e){
 
 getForecast(function(stats) {
   let textBox = document.getElementById('stats');
-  let out = "<i>Nate says:</i> in the <b>"+stats.model+"</b> model, "+stats.party1+" have a chance of <b>"+stats.winprob1+"%</b> to take back the House";
+  let out = "<i>Nate says:</i> in the <b>"+stats.model+"</b> model, "+stats.party+" have a chance of <b>"+stats.winprob+"%</b> to keep the Senate";
   textBox.innerHTML = out;
   chrome.browserAction.setBadgeText({text: stats.badgeprob});
 });
